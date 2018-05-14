@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13480" started-at="2018-05-10T10:59:45Z" finished-at="2018-05-10T10:59:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13480" started-at="2018-05-10T10:59:45Z" finished-at="2018-05-10T10:59:58Z">
+      <class name="com.psdsmres.testscript.PSDS_Test">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.psdsmres.testscript.PSDS_Test@7494e528]" name="setUp" is-config="true" duration-ms="13106" started-at="2018-05-10T16:29:45Z" finished-at="2018-05-10T16:29:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.psdsmres.testscript.PSDS_Test.init() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.psdsmres.testscript.PSDS_Test@7494e528]" name="init" duration-ms="361" started-at="2018-05-10T16:29:58Z" finished-at="2018-05-10T16:29:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="captureScreenShot(org.testng.ITestResult)[pri:0, instance:com.psdsmres.testscript.PSDS_Test@7494e528]" name="captureScreenShot" is-config="true" duration-ms="0" started-at="2018-05-10T16:29:58Z" finished-at="2018-05-10T16:29:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=init status=SUCCESS method=PSDS_Test.init()[pri:0, instance:com.psdsmres.testscript.PSDS_Test@7494e528] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.psdsmres.selenium.framework.BaseTest.captureScreenShot(BaseTest.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShot -->
+        <test-method status="SKIP" signature="afterMainMethod()[pri:0, instance:com.psdsmres.testscript.PSDS_Test@7494e528]" name="afterMainMethod" is-config="true" duration-ms="0" started-at="2018-05-10T16:29:58Z" finished-at="2018-05-10T16:29:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMainMethod -->
+      </class> <!-- com.psdsmres.testscript.PSDS_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

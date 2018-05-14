@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>TestNG:  ISOMetrix TestSuite</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ISOMetrix TestSuite</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 31 10:15:26 CAT 2017</td>
+</tr>
+<tr><td>Total time:</td><td>39 seconds (39323 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.isometrix.testscript.LoginScript.testCancelProcessDuringResetPasswordFromLoginPage()'><b>testCancelProcessDuringResetPasswordFromLoginPage</b><br>Test class: com.isometrix.testscript.LoginScript<br/>
+<a href="#Output-2044482328" onClick='toggleBox("Output-2044482328", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2044482328" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2044482328">
+
+Click on reset button on login page<br/>
+
+Enter the required details for reset password<br/>
+
+Click on Back to Login button<br/>
+
+Verify login field on current page<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.isometrix.testscript.LoginScript@1c3a4799</td></tr>
+<tr>
+<td title='com.isometrix.testscript.LoginScript.testLoginWithBlank()'><b>testLoginWithBlank</b><br>Test class: com.isometrix.testscript.LoginScript<br/>
+<a href="#Output-1070157899" onClick='toggleBox("Output-1070157899", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1070157899" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1070157899">
+
+Login using a blank username and blank password of IsoMetrix.<br/>
+
+Verify user is not logged in using blank username and blank password of IsoMetrix.<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.isometrix.testscript.LoginScript@1c3a4799</td></tr>
+<tr>
+<td title='com.isometrix.testscript.LoginScript.testLoginWithInValidPassword()'><b>testLoginWithInValidPassword</b><br>Test class: com.isometrix.testscript.LoginScript<br/>
+<a href="#Output-946802083" onClick='toggleBox("Output-946802083", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-946802083" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-946802083">
+
+Login using a valid username and invalid password of IsoMetrix.<br/>
+
+Verify user is not logged in using valid username and invalid password of IsoMetrix.<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.isometrix.testscript.LoginScript@1c3a4799</td></tr>
+<tr>
+<td title='com.isometrix.testscript.LoginScript.testLoginWithInValidUserName()'><b>testLoginWithInValidUserName</b><br>Test class: com.isometrix.testscript.LoginScript<br/>
+<a href="#Output-1866229258" onClick='toggleBox("Output-1866229258", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1866229258" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1866229258">
+
+Login using a invalid username and valid password of IsoMetrix.<br/>
+
+Verify user is not logged in using invalid username and valid password of IsoMetrix.<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.isometrix.testscript.LoginScript@1c3a4799</td></tr>
+<tr>
+<td title='com.isometrix.testscript.LoginScript.testResetPasswordFromLoginPage()'><b>testResetPasswordFromLoginPage</b><br>Test class: com.isometrix.testscript.LoginScript<br/>
+<a href="#Output-1517328406" onClick='toggleBox("Output-1517328406", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1517328406" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1517328406">
+
+Click on reset button on login page<br/>
+
+Enter the required details for reset password<br/>
+
+Click on submit button from reset password page<br/>
+
+Verify confirmation message and click on OK<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.isometrix.testscript.LoginScript@1c3a4799</td></tr>
+<tr>
+<td title='com.isometrix.testscript.LoginScript.testValidLogin()'><b>testValidLogin</b><br>Test class: com.isometrix.testscript.LoginScript<br/>
+<a href="#Output-254896875" onClick='toggleBox("Output-254896875", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-254896875" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-254896875">
+
+User is required to login using a valid IsoMetrix username and password.<br/>
+
+Verify user is logged in using valid username and valid password of IsoMetrix.<br/>
+
+Click on logout right upper side of the home page <br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.isometrix.testscript.LoginScript@1c3a4799</td></tr>
+</table><p>
+</body>
+</html>

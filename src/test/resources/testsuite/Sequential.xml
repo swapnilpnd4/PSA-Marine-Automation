@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" verbose="10">
+
+	<listeners>
+		<listener class-name="com.isometrix.report.CustomReport" /> 
+		<listener class-name="com.isometrix.report.SummaryReport" />
+		<!-- <listener class-name="com.isometrix.report.ExtentReporterNG" /> -->
+	</listeners>
+
+	<test name="ISOMetrix TestSuite" preserve-order="true" verbose="2">
+<!-- 	<packages>
+		<package name="com.isometrix.testscript"></package>
+	</packages> -->
+		<classes>
+
+			<class name="com.isometrix.testscript.LoginScript" />
+ 	 		<class name="com.isometrix.testscript.AllControlScript" />
+			<class name="com.isometrix.testscript.ControlsTabScript" />
+			<class name="com.isometrix.testscript.UserDefinedTabScript" />
+			<class name="com.isometrix.testscript.MDSTabScript" />
+			<class name="com.isometrix.testscript.MHDSTabScript" />
+			<class name="com.isometrix.testscript.UsersTabScript" />
+			<class name="com.isometrix.testscript.SubModuleTabScript" />
+			<class name="com.isometrix.testscript.MaintenanceScript" /> 
+		</classes>
+	</test>
+	<test name="ISOMetrix Admin" preserve-order="true" verbose="2">
+		<classes>
+			<class name="com.isometrix.admintestscript.OrganisationManagerScript"/>			
+		</classes>
+	</test>
+</suite>

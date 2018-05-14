@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" verbose="10">
+
+	<listeners>
+		<listener class-name="com.isometrix.report.CustomReport" />
+		<listener class-name="com.isometrix.report.SummaryReport" />
+		<!-- <listener class-name="com.isometrix.report.ExtentReporterNG" /> -->
+	</listeners>
+
+	<test name="ISOMetrix TestSuite" preserve-order="true" parallel="instances"
+		verbose="2">
+		<classes>
+			<class name="com.isometrix.testscript.SubModuleTabScript">
+				<methods>
+					<include name="testVerifySuccessfullyAddAfterFillingAllFieldOnSubModuleTab" />
+				
+				</methods>
+			</class>  
+			
+		<!-- 	<class name="com.isometrix.testscript.LoginScript" />
+	 		<class name="com.isometrix.testscript.AllControlScript" />  -->
+		</classes>
+	</test>
+<!-- 	<test name="ISOMetrix Admin" preserve-order="true" parallel="instances"
+		verbose="2">
+		<classes>
+			<class name="com.isometrix.testscript.SubModuleTabScript">
+				<methods>
+					<include name="testVerifySuccessfullyAddAfterFillingAllFieldOnSubModuleTab" />
+				</methods>
+			</class> 
+			
+		</classes>
+	</test> -->
+</suite>
